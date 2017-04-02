@@ -1,3 +1,6 @@
+![TraceElements in action](https://github.com/amineo/redactor-trace-elements/raw/master/screenshot.png)
+
+[**Blog Post**](https://anthonymineo.com/trace-elements-plugin-for-redactor/)
 
 This plugin adds the ability to toggle a trace on all parent block-level elements with an outline and their element name.
 
