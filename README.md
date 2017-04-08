@@ -2,12 +2,11 @@
 
 [**Blog Post**](https://anthonymineo.com/trace-elements-plugin-for-redactor/)
 
-This plugin adds the ability to toggle a trace on all parent block-level elements with an outline and their element name.
+This plugin adds the ability to toggle a trace on common parent block-level elements with an outline and their element name.
 
-The purpose for creating this plugin was so that it becomes a little clearer on what my WYSIWYG is doing. Is it adding unnecessary `<p>` tags? Are there empty `<ul>` or `<h*>` elements?
+The purpose for creating this plugin was so that it becomes a little clearer on what my WYSIWYG is doing. Is it adding unnecessary `<p>` tags? Are there empty `<div>`,`<ul>` or `<h*>` elements? Without jumping into source view it's hard to tell.
 
-Without having to jump into the source view to track-down empties is a nice time saver. It also comes in handy for writers/editors who may not be as familiar with HTML or the source view.
-
+It also comes in handy for writers/editors who may not be as familiar with HTML or the source view.
 
 Currently the plugin traces these common block elements by default:
 <ul>
@@ -26,11 +25,18 @@ Currently the plugin traces these common block elements by default:
 </ul>
 
 
+<hr>
 
+## How to Extend
 You can easily extend what gets traced with CSS! Just modify the selector below and add to your stylesheet.
-```language-css
-.redactor-trace.redactor-layer.redactor-in > ELEMENTNAME:after {content:'ELEMENTNAME';}
+
 ```
+/* Replace ELEMENTNAME with the element you want to trace */
+.redactor-trace.redactor-layer > ELEMENTNAME:after {
+   content:'ELEMENTNAME';
+}
+```
+This plugin makes use of `::after` with the `content` property so it's fast and customizable.
 
 
 <hr>
@@ -42,11 +48,11 @@ You can easily extend what gets traced with CSS! Just modify the selector below 
     <script>
     $(function(){
         $('#redactor').redactor({
-        plugins: ['TraceElements']
+            plugins: ['TraceElements']
         });
     });
     </script>
 ```
-- Reference the plugin script
-- Include **TraceElements** in plugins array
+- Reference the plugin script src
+- Include **TraceElements** in the plugins array
 
