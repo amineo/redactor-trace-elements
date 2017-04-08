@@ -6,22 +6,23 @@
  * @author: Anthony Mineo
  * @url: https://anthonymineo.com
  * @twitter: @Mineo27
+ * https://anthonymineo.com/trace-elements-plugin-for-redactor/
  */
 
 
 .re-traceelements.active {
   background-color: #3d79f2;
-  color: #fff;
+  color: #fff;""
 }
 
-.redactor-trace.redactor-layer.redactor-in > * {
+.redactor-trace.redactor-layer > * {
     border: dotted 1px #ffb7b2;
     position: relative;
     padding: 0.5em;
     position: relative;
 }
 
-.redactor-trace.redactor-layer.redactor-in > *:after {
+.redactor-trace.redactor-layer > *:after {
   position:absolute;
   top:-6px;
   left:2px;
@@ -33,16 +34,16 @@
 }
 
 /* Below are elements that will be traced */
-.redactor-trace.redactor-layer.redactor-in > div:after { content:'div'; }
-.redactor-trace.redactor-layer.redactor-in > br:after { content:'br'; }
-.redactor-trace.redactor-layer.redactor-in > p:after { content:'p'; }
-.redactor-trace.redactor-layer.redactor-in > blockquote:after { content:'blockquote'; }
-.redactor-trace.redactor-layer.redactor-in > h1:after {content:'h1';}
-.redactor-trace.redactor-layer.redactor-in > h2:after {content:'h2';}
-.redactor-trace.redactor-layer.redactor-in > h3:after {content:'h3';}
-.redactor-trace.redactor-layer.redactor-in > h4:after {content:'h4';}
-.redactor-trace.redactor-layer.redactor-in > h5:after {content:'h5';}
-.redactor-trace.redactor-layer.redactor-in > h6:after {content:'h6';}
-.redactor-trace.redactor-layer.redactor-in > ul:after {content:'ul';}
-.redactor-trace.redactor-layer.redactor-in > ol:after {content:'ol';}
-.redactor-trace.redactor-layer.redactor-in > pre:after {content:'pre'; top:1px;}
+.redactor-trace.redactor-layer > div:after { content:'div'; }
+.redactor-trace.redactor-layer > br:after { content:'br'; }
+.redactor-trace.redactor-layer > p:after { content:'p'; }
+.redactor-trace.redactor-layer > blockquote:after { content:'blockquote'; }
+.redactor-trace.redactor-layer > h1:after {content:'h1';}
+.redactor-trace.redactor-layer > h2:after {content:'h2';}
+.redactor-trace.redactor-layer > h3:after {content:'h3';}
+.redactor-trace.redactor-layer > h4:after {content:'h4';}
+.redactor-trace.redactor-layer > h5:after {content:'h5';}
+.redactor-trace.redactor-layer > h6:after {content:'h6';}
+.redactor-trace.redactor-layer > ul:after {content:'ul';}
+.redactor-trace.redactor-layer > ol:after {content:'ol';}
+.redactor-trace.redactor-layer > pre:after {content:'pre'; top:1px;}

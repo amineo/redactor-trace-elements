@@ -6,6 +6,7 @@
  * @author: Anthony Mineo
  * @url: https://anthonymineo.com
  * @twitter: @Mineo27
+ * https://anthonymineo.com/trace-elements-plugin-for-redactor/
  */
 
 (function($){
